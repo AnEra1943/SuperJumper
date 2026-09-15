@@ -1,0 +1,304 @@
+{
+  "ID": "c38db177-247a-4a1c-8ec4-5dadf8668a5a",
+  "Version": "3.10.0.0",
+  "Name": "help2",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 25,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "HelpScreen/help2.png",
+              "Plist": "HelpScreen/PlistHelp.plist"
+            },
+            "Scale9OriginX": 168,
+            "Scale9OriginY": 168,
+            "Scale9Width": 176,
+            "Scale9Height": 176,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 256.0,
+              "Y": 223.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8,
+              "Y": 0.4646
+            },
+            "PreSize": {
+              "X": 1.6,
+              "Y": 1.0667
+            },
+            "RightMargin": -192.0,
+            "TopMargin": 1.0,
+            "BottomMargin": -33.0,
+            "Tag": 27,
+            "ActionTag": 570107966,
+            "Size": {
+              "X": 512.0,
+              "Y": 512.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "MarkedSubImage",
+              "Path": "HelpScreen/back.png",
+              "Plist": "HelpScreen/PlistHelp.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 50,
+            "Scale9Height": 12,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.6125,
+              "ScaleY": 0.6176
+            },
+            "Position": {
+              "X": 61.0,
+              "Y": 36.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1906,
+              "Y": 0.075
+            },
+            "PreSize": {
+              "X": 0.25,
+              "Y": 0.0708
+            },
+            "LeftMargin": 12.0,
+            "RightMargin": 228.0,
+            "TopMargin": 431.0,
+            "BottomMargin": 15.0,
+            "Tag": 30,
+            "ActionTag": 229537640,
+            "Size": {
+              "X": 80.0,
+              "Y": 34.0
+            },
+            "Name": "Back",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "MarkedSubImage",
+              "Path": "HelpScreen/menu1.png",
+              "Plist": "HelpScreen/PlistHelp.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 72,
+            "Scale9Height": 9,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.6569,
+              "ScaleY": 0.6935
+            },
+            "Position": {
+              "X": 184.0,
+              "Y": 39.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.575,
+              "Y": 0.0813
+            },
+            "PreSize": {
+              "X": 0.3187,
+              "Y": 0.0646
+            },
+            "LeftMargin": 117.0,
+            "RightMargin": 101.0,
+            "TopMargin": 431.5,
+            "BottomMargin": 17.5,
+            "Tag": 31,
+            "ActionTag": -1392269449,
+            "Size": {
+              "X": 102.0,
+              "Y": 31.0
+            },
+            "Name": "Menu",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "MarkedSubImage",
+              "Path": "HelpScreen/next.png",
+              "Plist": "HelpScreen/PlistHelp.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 53,
+            "Scale9Height": 8,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.7048,
+              "ScaleY": 0.4
+            },
+            "Position": {
+              "X": 290.0,
+              "Y": 27.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9062,
+              "Y": 0.0563
+            },
+            "PreSize": {
+              "X": 0.2594,
+              "Y": 0.0625
+            },
+            "LeftMargin": 231.5,
+            "RightMargin": 5.5,
+            "TopMargin": 435.0,
+            "BottomMargin": 15.0,
+            "Tag": 32,
+            "ActionTag": 1269903453,
+            "Size": {
+              "X": 83.0,
+              "Y": 30.0
+            },
+            "Name": "Next",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 320.0,
+          "Y": 480.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "../Default/Button_Press.png",
+        "../HelpScreen/PlistHelp.plist",
+        "../HelpScreen/PlistHelp.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

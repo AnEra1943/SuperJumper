@@ -1,0 +1,155 @@
+{
+  "ID": "2aaf2d2e-9672-44eb-a4b7-a4b299f69673",
+  "Version": "3.10.0.0",
+  "Name": "HighScore",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 9,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "HighScore/background.png",
+              "Plist": "HighScore/PlistHighScore.plist"
+            },
+            "Scale9OriginX": 168,
+            "Scale9OriginY": 168,
+            "Scale9Width": 176,
+            "Scale9Height": 176,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 257.0,
+              "Y": 223.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8031,
+              "Y": 0.4646
+            },
+            "PreSize": {
+              "X": 1.6,
+              "Y": 1.0667
+            },
+            "LeftMargin": 1.0,
+            "RightMargin": -193.0,
+            "TopMargin": 1.0,
+            "BottomMargin": -33.0,
+            "Tag": 14,
+            "ActionTag": 1367409033,
+            "Size": {
+              "X": 512.0,
+              "Y": 512.0
+            },
+            "Name": "Image_2",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "MarkedSubImage",
+              "Path": "HighScore/Quit.png",
+              "Plist": "HighScore/PlistHighScore.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 98,
+            "Scale9Height": 13,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": -0.1875,
+              "ScaleY": 0.1
+            },
+            "Position": {
+              "X": 69.0,
+              "Y": 22.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2156,
+              "Y": 0.0458
+            },
+            "PreSize": {
+              "X": 0.4,
+              "Y": 0.0729
+            },
+            "LeftMargin": 93.0,
+            "RightMargin": 99.0,
+            "TopMargin": 426.5,
+            "BottomMargin": 18.5,
+            "Tag": 13,
+            "ActionTag": 1463488159,
+            "Size": {
+              "X": 128.0,
+              "Y": 35.0
+            },
+            "Name": "quit",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 320.0,
+          "Y": 480.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "../Default/Button_Press.png",
+        "../HighScore/PlistHighScore.plist",
+        "../HighScore/PlistHighScore.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

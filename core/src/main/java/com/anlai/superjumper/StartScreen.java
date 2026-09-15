@@ -1,35 +1,70 @@
 package com.anlai.superjumper;
 
+import com.anlai.util.CocosStartUtil;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.scenes.scene2d.*;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.utils.viewport.StretchViewport;
+
 
 public class StartScreen implements Screen {
-
     private final SuperJumper game;
-    private Texture background;
     private SpriteBatch batch;
-    private TextureRegion background_final;
-    private Texture items;
-    private TextureRegion title;
-    private TextureRegion navigation;
-
+    private Stage stage;
+    private Group group;
     public StartScreen(SuperJumper game) {
         this.game = game;
     }
 
+
+    private void addButtonListeners() {
+        //
+            Actor playButton = group.findActor("Button_2");
+            if(playButton!=null){
+                playButton.addListener(new ClickListener() {
+                    @Override
+                    public void clicked(InputEvent event, float x, float y) {
+                        game.setScreen(new GameScreen(game));
+                        System.out.println("PlayButton clicked");
+                    }
+                });
+            }
+            Actor highScoreButton = group.findActor("Button_3");
+            if(highScoreButton !=  null){
+                highScoreButton.addListener(new ClickListener() {
+                    @Override
+                    public void clicked(InputEvent event, float x, float y) {
+                        game.setScreen(new HighScoreScreen(game));
+                        System.out.println("HighScoreButton clicked");
+                    }
+                });
+            }
+            Actor helpButton = group.findActor("Button_4");
+            if(helpButton != null){
+                helpButton.addListener(new ClickListener() {
+                    @Override
+                    public void clicked(InputEvent event, float x, float y) {
+                        game.setScreen(new HelpScreen(game));
+                        System.out.println("HelpButton clicked");
+                    }
+                });
+            }
+        }
+
     @Override
     public void show() {
           batch = new SpriteBatch();
-          items = new Texture("items.png");
-          background = new Texture("background.png");
-          background_final = new TextureRegion(background,0,0,320,480);
-          title = new TextureRegion(items,0,350,281,153);
-          navigation = new TextureRegion(items,0,228,300,112);
-
+        stage = new Stage(new StretchViewport(320,480), batch);
+       // Gdx.input.setCatchKey(Input.Keys.BACK, true);//捕捉返回键直接让libgdx来操作
+        Gdx.input.setInputProcessor(stage);//舞台来捕捉按键
+        group = CocosStartUtil.parseScene("res/json/Start.json");
+        group.setTouchable(Touchable.enabled);
+        stage.addActor(group);
+        addButtonListeners();
     }
 
 
@@ -37,58 +72,15 @@ public class StartScreen implements Screen {
     public void render(float delta) {
 
         ScreenUtils.clear(0, 0, 0, 1);
-        // 检查有没有点击Play
-        if (Gdx.input.justTouched()) {
+        //初始化stage
+        stage.act(delta);
+        stage.draw();
 
-            float touchX = Gdx.input.getX();
-            float touchY = 480 - Gdx.input.getY();
-
-            // 如果点击的位置在这个区域里面
-            if (touchX >= 102 && touchX <= 224 &&
-                touchY >= 183 && touchY <= 216) {
-                System.out.println("touch");
-                game.setScreen(new GameScreen(game));
-            }
-        }
-        // 检查有没有点击HighScore
-        if (Gdx.input.justTouched()) {
-
-            float touchX = Gdx.input.getX();
-            float touchY = 480 - Gdx.input.getY();
-
-            // 如果点击的位置在这个区域里面
-            if (touchX >= 15 && touchX <= 313 &&
-                touchY >= 145 && touchY <= 179) {
-                System.out.println("touch");
-                game.setScreen(new HighScoreScreen(game));
-            }
-        }
-        // 检查有没有点击Help
-        if (Gdx.input.justTouched()) {
-
-            float touchX = Gdx.input.getX();
-            float touchY = 480 - Gdx.input.getY();
-
-            // 如果点击的位置在这个区域里面
-            if (touchX >= 101 && touchX <= 226 &&
-                touchY >= 107 && touchY <= 142) {
-                System.out.println("touch Help");
-                game.setScreen(new HelpScreen(game));
-            }
-        }
-
-        batch.begin();
-
-        batch.draw(background_final, 0, 0, 320, 480);
-        batch.draw(title, 25, 300);
-        batch.draw(navigation, 14, 100);
-
-        batch.end();
     }
 
     @Override
     public void resize(int width, int height) {
-
+        stage.getViewport().update(width, height, true);
     }
 
     @Override

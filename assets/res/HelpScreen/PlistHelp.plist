@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>HelpScreen/back.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,1585},{80,34}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{80,34}</string>
+			</dict>
+			<key>HelpScreen/help1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,2},{512,512}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{512,512}</string>
+			</dict>
+			<key>HelpScreen/help2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,518},{512,512}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{512,512}</string>
+			</dict>
+			<key>HelpScreen/help3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,1034},{512,512}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{512,512}</string>
+			</dict>
+			<key>HelpScreen/help4.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{518,2},{512,512}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{512,512}</string>
+			</dict>
+			<key>HelpScreen/help5.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1034,2},{512,512}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{512,512}</string>
+			</dict>
+			<key>HelpScreen/menu.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,1623},{81,33}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{81,33}</string>
+			</dict>
+			<key>HelpScreen/next.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{86,1585},{83,30}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{83,30}</string>
+			</dict>
+			<key>HelpScreen/menu1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,1550},{102,31}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{102,31}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>PlistHelp.png</string>
+			<key>realTextureFileName</key>
+			<string>PlistHelp.png</string>
+			<key>size</key>
+			<string>{1548,1658}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1548</integer>
+			<key>height</key>
+			<integer>1658</integer>
+		</dict>
+	</dict>
+</plist>

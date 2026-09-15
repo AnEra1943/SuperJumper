@@ -1,7 +1,7 @@
 package com.anlai.superjumper;
+import com.anlai.util.AssetsUtil;
 import com.badlogic.gdx.Game;
-
-
+import com.badlogic.gdx.assets.AssetManager;
 
 
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
@@ -11,6 +11,7 @@ public class SuperJumper extends Game {
 
     @Override
     public void create() {
+        AssetsUtil.init();
         saveManager = new SaveManager();
         setScreen(new StartScreen(this));
     }
